@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff6666">
+
+    <ImageView
+        android:id="@+id/imgPiedra"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/piedra"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/txtPiedraTiradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgPiedra"
+        android:layout_alignTop="@id/imgPiedra"
+        android:text="0"
+        android:textSize="40dp"/>
+    <ImageView
+        android:id="@+id/imgPapel"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/papel"
+        android:layout_below="@id/imgPiedra"/>
+    <TextView
+        android:id="@+id/txtPapelTiradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPiedra"
+        android:layout_toRightOf="@id/imgPapel"
+        android:text="0"
+        android:textSize="40dp"/>
+    <ImageView
+        android:id="@+id/imgTijeras"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/tijeras"
+        android:layout_below="@id/imgPapel"/>
+    <TextView
+    android:id="@+id/txtTijerasTiradas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/imgPapel"
+    android:layout_toRightOf="@id/imgTijeras"
+        android:text="0"
+        android:textSize="40dp"/>
+
+
+    <TextView
+        android:id="@+id/ganadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgTijeras"
+        android:text="Partidas ganadas: "
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/txtGanadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ganadas"
+        android:layout_below="@id/txtGanadas"
+        android:layout_alignTop="@id/ganadas"
+        android:text="0"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/perdidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ganadas"
+        android:text="Partidas perdidas: "
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/txtPerdidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/perdidas"
+        android:layout_alignTop="@id/perdidas"
+        android:text="0"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/empatadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/perdidas"
+        android:text="Partidas empatadas: "
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/txtEmpatadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPerdidas"
+        android:layout_toRightOf="@id/empatadas"
+        android:layout_alignTop="@id/empatadas"
+        android:text="0"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/borrarEstadistica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtEmpatadas"/>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite_white_24dp"
+        android:title="@string/text_favorites"
+        app:showAsAction="ifRoom" /><!--        android:icon="@drawable/ic_favorite_white_24dp"-->
+    <item
+        android:id="@+id/action_schedules"
+        android:enabled="true"
+        android:icon="@drawable/ic_access_time_white_24dp"
+        android:title="@string/text_schedules"
+        app:showAsAction="ifRoom" /><!-- android:icon="@drawable/ic_access_time_white_24dp"-->
+    <item
+        android:id="@+id/action_music"
+        android:enabled="true"
+        android:icon="@drawable/ic_audiotrack_white_24dp"
+        android:title="@string/text_music"
+        app:showAsAction="ifRoom" /><!-- android:icon="@drawable/ic_audiotrack_white_24dp"-->
+    <item
+        android:id="@+id/action_play"
+        android:enabled="true"
+        android:icon="@drawable/play"
+        android:title="@string/text_play"
+        app:showAsAction="ifRoom" /><!---->
+    <item
+        android:id="@+id/action_estadistica"
+        android:enabled="true"
+        android:icon="@drawable/statistics2"
+        android:title="@string/text_estadistica"
+        app:showAsAction="ifRoom" /><!--    android:icon="@drawable/stadisticas"-->
+</menu>
